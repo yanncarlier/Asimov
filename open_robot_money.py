@@ -11,7 +11,11 @@ VIEW_ID = "owner"
 #/obp/v3.1.0/banks/BANK_ID/accounts/ACCOUNT_ID/VIEW_ID/funds-available
 #url = "https://openlab.openbankproject.com/obp/" + API_V + "banks/" + BANK_ID + "accounts/" + ACCOUNT_ID + VIEW_ID + "/funds-available"
 
-url = 'https://openlab.openbankproject.com/obp/v3.1.0/banks/hsbc.01.hk.hsbc/accounts/123/_third_party_app/funds-available?amount=1000&currency=EUR'
+AMOUNT = '100000000'
+CURRENCY = 'EUR'
+VALIDATE = 'funds-available'
+
+url = 'https://openlab.openbankproject.com/obp/v3.1.0/banks/hsbc.01.hk.hsbc/accounts/123/_third_party_app/' + VALIDATE + '?amount=' + AMOUNT +'&currency=' + CURRENCY
 
 payload = ""
 
@@ -25,7 +29,11 @@ headers = {
 
 response = requests.request("GET", url, data=payload, headers=headers)
 
-print(response.text)
+#print(response.text)
+
+ANSWER = response.text[11]
+
+print(ANSWER)
 
 # a = response.text
 # print(json.dumps(a, indent=2))
