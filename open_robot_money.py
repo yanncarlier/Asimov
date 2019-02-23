@@ -29,13 +29,16 @@ headers = {
 
 response = requests.request("GET", url, data=payload, headers=headers)
 
-#print(response.text)
-
 ANSWER = response.text[11]
+#print(ANSWER)
 
-print(ANSWER)
+
+if (ANSWER == "n"):
+    print(response.text)
+
 
 # a = response.text
+
 # print(json.dumps(a, indent=2))
 #print (json.dumps(a, indent=2))
 

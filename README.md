@@ -2,4 +2,16 @@
 
 Developer Email: yanncarlier@gmail.com
 
-App DescriptionOpen Robot Money it's an integration between hsbc api, blockchain and robots. A robot to function has to have assets in the bank account.
+##### App Description
+
+Open Robot Money its integration between HSBC API, blockchain and robots. 
+To function a robot has to have assets in the bank account.
+
+#####1. Install multichain
+
+#####2. Connecting to the blockchain
+
+You can connect to this node using:
+
+ multichaind asimov@openrobotmoney.org:7199
+
