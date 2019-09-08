@@ -1,6 +1,10 @@
-# openrobotmoney
+# Asimov open robot money
 
 Developer Email: yanncarlier@gmail.com
+
+<https://vimeo.com/showcase/5792761/video/319684031>
+
+This was developed in openlab @ HSBC during a weekend hackathon 
 
 ##### App Description
 
