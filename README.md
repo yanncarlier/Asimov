@@ -22,6 +22,8 @@ rpcpassword=XXXXXXXXXXXX
 
 multichain-cli asimov
 
+create stream funds-available false
+
 asimov: liststream
 {"method":"liststream","params":[],"id":"74723210-1567847018","chain_name":"asimov"}
 
@@ -34,6 +36,11 @@ Examples:
 > multichain-cli asimov liststreamkeys "test-stream" "*" true 10 100
 > curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "liststreamkeys", "params": ["test-stream", "key01"] }' -H 'content-type: text/plain;' http://127.0.0.1:6268
 
+
+
+publish funds-available key1 
+
+curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"key1", "method": "publish", "params": ["stream", "funds-available", false] }' -H 'content-type: text/plain;' http://127.0.0.1:6268
 
 
 
