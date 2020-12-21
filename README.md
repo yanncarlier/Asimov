@@ -1,6 +1,5 @@
 # Asimov open robot money
 
-Developer Email: yanncarlier@gmail.com
 
 <https://vimeo.com/showcase/5792761/video/319684031>
 
